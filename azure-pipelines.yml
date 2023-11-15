@@ -11,17 +11,6 @@ pool:
 
 steps:
 - script: echo Hello, world!
-  - task: Bash@3
-    inputs:
-      targetType: 'inline'
-      script: |
-        # Write your commands here
-        
-        echo 'Hello world'
-        git config --system core.longpaths true
-        git clone --mirror https://github.com/HemanthNS/testrepo
-        git remote set-url origin https://github.com/HemanthNS/syncrepo
-        git push --mirror
   displayName: 'Run a one-line script'
 
 - script: |
