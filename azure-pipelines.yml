@@ -19,7 +19,6 @@ steps:
         
         echo 'Hello world'
         git config --system core.longpaths true
-        cd someserverpath //just a place to clone the repositories
         git clone --mirror https://github.com/HemanthNS/testrepo
         git remote set-url origin https://github.com/HemanthNS/syncrepo
         git push --mirror
