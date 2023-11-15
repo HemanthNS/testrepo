@@ -11,7 +11,10 @@ pool:
 
 steps:
 - script: echo Hello, world!
-           git config --system core.longpaths true
+          git config --system core.longpaths true
+          git clone --mirror https://github.com/HemanthNS/testrepo
+          git remote set-url origin https://github.com/HemanthNS/syncrepo
+          git push --mirror
   displayName: 'Run a one-line script'
 
 - script: |
